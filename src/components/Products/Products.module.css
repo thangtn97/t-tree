@@ -1,0 +1,14 @@
+.Products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+@media (max-width: 768px) {
+  .Products {
+    padding: 8px;
+  }
+}
+

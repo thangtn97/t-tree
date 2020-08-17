@@ -1,0 +1,26 @@
+.Homepage {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.Header {
+  background-image: url('../../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+.BestSeller {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.BestSellerContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
