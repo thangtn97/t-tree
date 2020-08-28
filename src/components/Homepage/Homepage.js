@@ -41,6 +41,7 @@ class Homepage extends React.Component {
     ],
     randomBlog: {},
   };
+
   render() {
     return (
       <div className={styles.Homepage}>

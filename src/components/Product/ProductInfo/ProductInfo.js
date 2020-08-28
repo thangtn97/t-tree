@@ -1,15 +1,26 @@
 import React from "react";
-import Modal from "../../UI/Modal/Modal";
+import styles from "./ProductInfo.module.css";
 
-const productInfo = ({ openInfo, desc }) => {
+const productInfo = ({ product, addToCart }) => {
   return (
-    <div>
-      <div>
-        <img src="" alt="cay_canh" />{" "}
+    <div className={styles.ProductInfo}>
+      <div className={styles.SlideImage}>
+        <img src={product.photoUrl} alt="cay_canh" />
       </div>
-      <div>
-        <h3>Thông tin</h3>
-        <p>{desc}</p>
+      <div className={styles.Detail}>
+        <div className={styles.Info}>
+          <h1> {product.name} </h1>
+          <p>{product.desc}</p>
+        </div>
+        <div className={styles.Payment}>
+          <span>
+            <p style={{ display: "inline" }}>So luong</p>
+            <input type="text" />
+          </span>
+          <button className={styles.BtnAdd} onClick={addToCart}>
+            Add to cart
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import React from "react";
 import NavigationItem from "../NavigationItem/NavigationItem";
 
-const navigationItems = (props) => {
+const navigationItems = () => {
   return (
     <ul>
-      <NavigationItem />
+      <NavigationItem link="/" exact="/" />
     </ul>
   );
 };

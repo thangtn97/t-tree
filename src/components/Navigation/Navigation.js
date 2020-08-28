@@ -1,7 +1,19 @@
 import React from "react";
+import { connect } from "react-redux";
+import NavigationItems from "./NavigationItems/NavigationItems";
 
 const navigation = () => {
-  return <div></div>;
+  return (
+    <div>
+      <NavigationItems />
+    </div>
+  );
 };
 
-export default navigation;
+const mapStateToProps = (state) => {
+  return {
+    cart: state.cart,
+  };
+};
+
+export default connect(mapStateToProps)(navigation);

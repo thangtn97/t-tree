@@ -15,6 +15,7 @@
 
 .ImageBox {
   display: inline-block;
+  cursor: zoom-in;
 }
 
 
