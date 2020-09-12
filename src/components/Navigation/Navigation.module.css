@@ -1,0 +1,16 @@
+.Navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #02780E;
+  margin-bottom: 100px;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 960px;
+}
